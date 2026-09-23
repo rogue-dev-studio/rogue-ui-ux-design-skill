@@ -18,39 +18,39 @@ Aligns with role **UI/UX Designer**. Tokens/components ownership: Design System 
 
 ## When to use
 
-- Merancang atau mereview flow, wireframe, mockup, interaction
-- Memastikan layar baru selaras tema/brand project aktif
-- Menulis UI specification / AC visual sebelum Frontend mengimplementasi
-- Review desain terhadap rule `ui`
+- Design or review flow, wireframe, mockup, interaction
+- Ensure new screens align with active project theme/brand
+- Write UI specification / visual AC before Frontend implements
+- Review design against `ui` rule
 
 ## When not to use
 
-- Hanya coding komponen tanpa keputusan desain -> `frontend-engineering`
-- Hanya mendefinisikan token/library design system -> `canvas-design` / Design System Specialist
-- Mengubah requirement bisnis -> Product Owner / BA
+- Component coding only without design decisions -> `frontend-engineering`
+- Token/design system library definition only -> `canvas-design` / Design System Specialist
+- Changing business requirements -> Product Owner / BA
 
 ## Procedure
 
-1. **Theme gate (wajib dulu)** - Baca sumber tema project aktif:
-   - `PROJECT.md` / nama & deskripsi produk
-   - `project/{id}/docs/design/` (bila ada)
-   - Design system / CSS variables / komponen existing di repo
-   - Brand tone (formal/informatif/operasional, dll.) yang sudah dipakai layar lain
-   - Jika tema belum terdokumentasi: catat asumsi tertulis singkat, lalu selaraskan ke pola UI yang **sudah ada** di project - jangan mengimpor estetika generik luar.
-2. **Compatibility check** - Tolak atau revisi usulan yang bentrok warna, tipografi, radius, density, ikonografi, atau "AI slop" default bila project sudah punya bahasa visual.
-3. **IA & flow** - Satu tujuan per layar/section; happy path + empty/loading/error.
-4. **Wire -> fidelity** - Low-fi lalu hi-fi sesuai kebutuhan; interaksi (focus, modal, navigasi) eksplisit.
-5. **A11y** - Kontras, label, target sentuh/fokus keyboard.
-6. **Handoff** - Spec ke Frontend + catatan tema (token/komponen yang dipakai); AC UI dapat diuji.
-7. **Verify** - Checklist `reference.md`; bila E2E, artifact di `project/{id}/docs/design/`.
+1. **Theme gate (required first)** - Read active project theme sources:
+   - `PROJECT.md` / product name & description
+   - `project/{id}/docs/design/` (if present)
+   - Design system / CSS variables / existing components in repo
+   - Brand tone (formal/informative/operational, etc.) already used on other screens
+   - If theme not documented: record brief written assumption, then align to UI patterns **already in** the project - do not import generic external aesthetics.
+2. **Compatibility check** - Reject or revise proposals that conflict with color, typography, radius, density, iconography, or default "AI slop" if project already has visual language.
+3. **IA & flow** - One goal per screen/section; happy path + empty/loading/error.
+4. **Wire -> fidelity** - Low-fi then hi-fi as needed; interactions (focus, modal, navigation) explicit.
+5. **A11y** - Contrast, labels, touch/keyboard focus targets.
+6. **Handoff** - Spec to Frontend + theme notes (tokens/components used); UI AC testable.
+7. **Verify** - Checklist `reference.md`; if E2E, artifact in `project/{id}/docs/design/`.
 
 ## DoD
 
-- [ ] Theme gate lulus: desain selaras tema project aktif/akan dibuat (atau asumsi tertulis + selaras UI existing)
-- [ ] Flow + states (empty/loading/error) lengkap untuk lingkup layar
-- [ ] A11y dasar terpenuhi
-- [ ] Tidak ada pola AI-slop yang bertentangan dengan brand project
-- [ ] Spec/handoff siap untuk `frontend-engineering`
+- [ ] Theme gate passed: design aligns with active/upcoming project theme (or written assumption + aligned with existing UI)
+- [ ] Flow + states (empty/loading/error) complete for screen scope
+- [ ] Basic a11y met
+- [ ] No AI-slop patterns conflicting with project brand
+- [ ] Spec/handoff ready for `frontend-engineering`
 
 ## Attribution
 
